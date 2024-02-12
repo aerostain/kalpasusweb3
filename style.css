@@ -22,9 +22,6 @@ body{
     gap: 5px;
     grid-template-columns: repeat(3,1fr);
     grid-row: auto;
-    @media(max-width:600px){
-        margin: 0 2%;
-    }
 }
 .grid-item{
     height: 20rem;
@@ -32,9 +29,6 @@ body{
     background-color: lightcoral;
     border: solid 1px yellow;
     border-radius: 8px;
-    @media(max-width:600px){
-        height: 8rem;
-    }
 }
 
 @media(max-width:600px){
@@ -43,6 +37,12 @@ body{
     }
     .cover{
         height: 40vh;
+    }
+    .grid-container{
+        margin: 0 2%;
+    }
+    .grid-item{
+        height: 8rem;
     }
 }
 
