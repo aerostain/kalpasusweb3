@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 300vh;
+}
+
+.cover{
+    background: url(stock/Fondo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;    
+}
+
+@media(max-width:600px){
+    body{
+        height: 100%;
+    }
+    .cover{
+        height: 40vh;
+    }
+}
+
+
