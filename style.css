@@ -14,6 +14,29 @@ body{
     height: 100vh;    
 }
 
+.grid-container{
+    margin: 0 5%;
+    padding: 10px;
+    background-color: aquamarine;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-row: auto;
+    @media(max-width:600px){
+        margin: 0 2%;
+    }
+}
+.grid-item{
+    height: 20rem;
+    /* width: 100px;     */
+    background-color: lightcoral;
+    border: solid 1px yellow;
+    border-radius: 8px;
+    @media(max-width:600px){
+        height: 8rem;
+    }
+}
+
 @media(max-width:600px){
     body{
         height: 100%;
